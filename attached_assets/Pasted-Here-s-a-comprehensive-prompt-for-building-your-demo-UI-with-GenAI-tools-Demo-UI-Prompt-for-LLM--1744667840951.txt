@@ -1,0 +1,78 @@
+Here's a comprehensive prompt for building your demo UI with GenAI tools:
+
+# Demo UI Prompt for LLM-IVR POC
+
+## Project Overview
+I need to create a web-based demonstration interface for a Proof of Concept that uses LLMs to replace traditional IVR systems. The system takes voice input, processes it using AI, and routes callers to appropriate departments based on intent and business rules. This demo UI will be used for a presentation next week.
+
+## Core Functionality Requirements
+- Simulate a phone call interaction with our LLM-based IVR system
+- Display the conversation flow in real-time
+- Show system state transitions during the call
+- Visualize key information like detected intent and authentication status
+- Enable triggering of predefined demo scenarios
+
+## Visual Layout
+Create a responsive single-page application with:
+
+1. **Main Call Simulation Area**
+   - Microphone button to simulate caller speaking
+   - Visual voice activity indicator
+   - System status indicator (listening, processing, responding)
+   - Text-to-speech output control (play/pause)
+
+2. **Conversation Display**
+   - Real-time transcript of the entire conversation
+   - Clear visual distinction between caller and system messages
+   - Timestamps for each interaction
+   - Highlight important detected entities (e.g., account numbers, dates)
+
+3. **System State Dashboard**
+   - Current authentication status (authenticated/not authenticated)
+   - Detected intent with confidence score
+   - Context information being tracked
+   - Current step in the workflow (auth checking, intent routing, etc.)
+
+4. **Demo Controls**
+   - Scenario selector for 3-5 preconfigured demo paths:
+     * New customer inquiry about services
+     * Existing customer billing question
+     * Technical support request
+     * Account information update
+     * Complaint escalation
+   - Manual override options for demo purposes
+   - Reset button to start over
+
+5. **Visual Workflow Map**
+   - Simplified version of our workflow diagram
+   - Highlighting of the current position in the workflow
+   - Animation of transitions between states
+
+## Technical Specifications
+- Prefer a React-based implementation for component reusability
+- Use a lightweight UI framework like Tailwind CSS
+- Implement with mock data for the demo (no need for backend integration yet)
+- Focus on visual polish and smooth transitions for presentation impact
+- Ensure it works well in presentation mode on standard browsers
+
+## Design Style
+- Clean, professional interface with a modern tech aesthetic
+- Color scheme should differentiate system components clearly
+- Typography should prioritize readability for presentation viewing
+- Use appropriate icons to enhance usability
+- Animation should be subtle and purposeful
+
+## Demo Scenarios
+Each predefined scenario should demonstrate a different path through our workflow, showing how the system handles:
+1. Clear intent vs. ambiguous statements
+2. Successful authentication vs. authentication challenges
+3. Direct routing vs. clarifying questions
+4. Different final department destinations
+
+## Limitations and Scope
+- This is for demonstration only - no need for actual voice processing
+- Mock data is acceptable for all components
+- Simulated delays for realism are encouraged
+- Focus on visual storytelling of how the system works
+
+Please create a UI that would effectively demonstrate the capabilities of our LLM-IVR system to stakeholders in a compelling and intuitive way.
